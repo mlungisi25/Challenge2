@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>JavaScript Challenges </h2>
+
+<p>Area of a triangle</p>
+
+<p>The area of a triangle where the lengths of its three sides are 7, 8, 9.</p>
+
+<button type="button" onclick="myTriangle()">try</button>
+
+<p id="tri"></p>
+</center>
+<script>
+//area of a triangle
+function myTriangle() {
+
+    
+	
+	var side1 =7; 
+	var side2 =8; 
+	var side3 =9; 
+	
+	/*side1 = document.getElementById("s1").value;
+    side2 = document.getElementById("s2").value;
+	side3 = document.getElementById("s3").value;*/
+	
+	var perimeter = (side1 + side2 + side3)/2;
+	var area =  Math.sqrt(perimeter*((perimeter-side1)*(perimeter-side2)*(perimeter-side3)));
+	
+	
+	document.getElementById("tri").innerHTML = "The Area of a triangle is :"+ area;
+	console.log(area);
+
+	
+}
+</script>
+</body>
+</html>
